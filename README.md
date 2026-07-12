@@ -167,20 +167,7 @@ This project helped me gain hands-on experience in:
 - Doctor dashboard
 - Mobile application
 - Cloud deployment
-
----
-
-## 📸 Screenshots
-
-> Add screenshots of:
->
-> - Home Page
-> - Upload Report
-> - Dashboard
-> - AI Summary
-> - Wellness Recommendations
-> - Health Charts
-
+  
 ---
 
 ## 👨‍💻 Author
@@ -188,7 +175,7 @@ This project helped me gain hands-on experience in:
 **Sourabh Gupta**
 
 - GitHub: https://github.com/sourabhg07
-- LinkedIn: https://linkedin.com/in/YOUR-LINKEDIN
+- LinkedIn: https://www.linkedin.com/in/sourabh-gupta7-
 
 ---
 
