@@ -1,8 +1,8 @@
-# 🩺 Health Report Analysis System
+# 🩺 Blood Report Analysis System
 
 ## 📌 Project Overview
 
-The Health Report Analysis System is an intelligent healthcare analytics platform designed to extract, process, and analyze health report data from PDF and image files. By leveraging OCR (Optical Character Recognition), data analytics, and visualization techniques, the system transforms complex medical reports into easy-to-understand insights and interactive dashboards.
+The Blood Report Analysis System is an intelligent healthcare analytics platform designed to extract, process, and analyze health report data from PDF and image files. By leveraging OCR (Optical Character Recognition), data analytics, and visualization techniques, the system transforms complex medical reports into easy-to-understand insights and interactive dashboards.
 
 The platform helps users efficiently review health parameters, track trends, and gain meaningful insights from their medical reports.
 
