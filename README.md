@@ -1,159 +1,185 @@
-# 🩺 Blood Report Analysis System
+# 🩸 Blood Report Analysis Dashboard
 
-## 📌 Project Overview
-
-The Blood Report Analysis System is an intelligent healthcare analytics platform designed to extract, process, and analyze health report data from PDF and image files. By leveraging OCR (Optical Character Recognition), data analytics, and visualization techniques, the system transforms complex medical reports into easy-to-understand insights and interactive dashboards.
-
-The platform helps users efficiently review health parameters, track trends, and gain meaningful insights from their medical reports.
+An AI-powered full-stack web application that transforms blood test reports into structured health insights. The system extracts health parameters from PDF and image reports using OCR, analyzes the extracted values, generates an AI-powered summary, highlights abnormal parameters, and provides natural wellness recommendations through an interactive dashboard.
 
 ---
 
-## 🎯 Problem Statement
+## 🚀 Features
 
-Health reports often contain large amounts of medical information that can be difficult for individuals to interpret and track over time.
-
-This project aims to:
-
-✔ Automate health report data extraction
-
-✔ Reduce manual data entry efforts
-
-✔ Visualize health metrics through dashboards
-
-✔ Track health trends over time
-
-✔ Generate meaningful report summaries
+- 📄 Upload blood reports in PDF or image format
+- 🔍 OCR-based extraction of health parameters
+- 📊 Automatic detection of parameters outside the normal range
+- 🤖 AI-generated health report summary using Google Gemini API
+- 🌿 Natural wellness recommendations including dietary and lifestyle suggestions
+- 📈 Interactive dashboard to visualize health metrics
+- 🗄️ Secure storage of reports and extracted data
+- 📱 Responsive and user-friendly interface
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React.js
-* Tailwind CSS
+- React.js
+- Vite
+- Tailwind CSS
+- Recharts
 
 ### Backend
+- Node.js
+- Express.js
 
-* Node.js
-* Express.js
+### AI & OCR
+- Google Gemini API
+- Tesseract OCR
+- PDFPlumber
+- PyMuPDF
 
 ### Database
+- PostgreSQL
 
-* PostgreSQL
+### Programming
+- Python
+- JavaScript
 
-### Data Processing
-
-* Python
-* OCR Technology
-
-### Visualization
-
-* Interactive Dashboards
-* Data Analytics
+### Tools
+- Git
+- GitHub
+- VS Code
 
 ---
 
-## 🔍 Key Features
-
-* PDF & Image Report Upload
-* OCR-Based Data Extraction
-* Automated Health Parameter Detection
-* Secure Report Storage
-* Interactive Health Dashboard
-* Trend Analysis & Visualization
-* Report Summary Generation
-* User-Friendly Interface
-
----
-
-## ⚙️ System Workflow
+## 🏗️ System Architecture
 
 ```text
-Health Report Upload
-          ↓
- OCR Data Extraction
-          ↓
- Data Cleaning & Validation
-          ↓
- Database Storage
-          ↓
- Data Analysis
-          ↓
- Dashboard Visualization
-          ↓
- Health Insights & Summary
+                  Blood Report (PDF/Image)
+                           │
+                           ▼
+                    OCR Processing
+           (Tesseract / PDFPlumber)
+                           │
+                           ▼
+              Extract Health Parameters
+                           │
+                           ▼
+                Parameter Validation
+          Compare with Reference Ranges
+                           │
+          ┌────────────────┴────────────────┐
+          ▼                                 ▼
+  Google Gemini API                 PostgreSQL Database
+  AI Summary & Wellness             Store Reports & Data
+      Recommendations                     │
+          └────────────────┬────────────────┘
+                           ▼
+                 Backend REST APIs
+                           │
+                           ▼
+                 React Dashboard UI
 ```
 
 ---
 
-## 📊 Dashboard Insights
+## 💡 How It Works
 
-The system provides insights such as:
-
-* Health Parameter Trends
-* Historical Report Comparison
-* Abnormal Value Detection
-* Report Summary Visualization
-* Key Health Metric Tracking
+1. User uploads a blood report in PDF or image format.
+2. OCR extracts text and health parameters from the report.
+3. The extracted values are structured and compared against normal reference ranges.
+4. The processed data is stored in PostgreSQL.
+5. Google Gemini API generates:
+   - A concise report summary
+   - Key observations
+   - Natural wellness recommendations
+6. The dashboard displays:
+   - Blood parameters
+   - Normal vs abnormal values
+   - AI-generated summary
+   - Wellness recommendations
+   - Health visualizations
 
 ---
 
-## 🖥️ Application Preview
+## 📊 Dashboard Highlights
 
-### Dashboard Overview
-
-*Add screenshots here*
-
-```markdown
-![Dashboard](screenshots/dashboard-overview.png)
-```
-
-### Health Metrics Visualization
-
-```markdown
-![Health Analysis](screenshots/health-analysis.png)
-```
-
-### Report Upload Interface
-
-```markdown
-![Upload Screen](screenshots/upload-screen.png)
-```
+- Health Parameter Table
+- Normal vs Abnormal Indicators
+- AI Summary Panel
+- Wellness Recommendation Panel
+- Interactive Charts
+- Historical Report Tracking
 
 ---
 
 ## 📂 Project Structure
 
-```text
-health-report-analysis-system
+```
+Blood-Report-Analysis/
 │
 ├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── assets/
+│
 ├── backend/
-├── database/
-├── screenshots/
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── middleware/
+│   └── database/
+│
+├── python/
+│   ├── ocr/
+│   ├── preprocessing/
+│   └── gemini/
+│
+├── uploads/
+│
 ├── README.md
-└── project-report.pdf
+└── package.json
 ```
 
 ---
 
-## 💡 Business Impact
+## 🎯 Key Learning Outcomes
 
-* Reduced manual report processing effort through OCR automation.
-* Improved accessibility of health data through visualization.
-* Enabled users to better understand and track health metrics.
-* Simplified medical report interpretation using analytics and dashboards.
+This project helped me gain hands-on experience in:
+
+- Full Stack Development
+- REST API Development
+- OCR Integration
+- Google Gemini API Integration
+- PostgreSQL Database Design
+- AI-assisted Health Report Analysis
+- Data Visualization
+- System Integration
+- Version Control using Git & GitHub
 
 ---
 
-## 🚀 Future Enhancements
+## 🔮 Future Enhancements
 
-* AI-Powered Health Insights
-* Personalized Health Recommendations
-* Multi-Report Trend Tracking
-* Mobile Application Integration
-* Advanced Predictive Analytics
+- Multi-language support
+- User authentication
+- Historical report comparison
+- Downloadable health reports
+- Email report sharing
+- Doctor dashboard
+- Mobile application
+- Cloud deployment
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of:
+>
+> - Home Page
+> - Upload Report
+> - Dashboard
+> - AI Summary
+> - Wellness Recommendations
+> - Health Charts
 
 ---
 
@@ -161,6 +187,9 @@ health-report-analysis-system
 
 **Sourabh Gupta**
 
-📊 Data Analyst | Power BI | SQL | Python | Business Intelligence
+- GitHub: https://github.com/sourabhg07
+- LinkedIn: https://linkedin.com/in/YOUR-LINKEDIN
 
-🔗 Open to opportunities in Data Analytics, Business Intelligence, and Data-Driven Product Development.
+---
+
+⭐ If you found this project interesting, consider giving it a star!
